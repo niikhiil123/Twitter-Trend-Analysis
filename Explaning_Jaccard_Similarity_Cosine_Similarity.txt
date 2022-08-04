@@ -1,0 +1,42 @@
+Jaccard similarity=intersection/union
+ 
+s1=hello world
+s2=hello a b world
+
+intersection = 2 (hello,world)
+union = 4 (hello,a,b,world)
+
+Jaccard score = 2/4 = 0.5
+
+
+
+
+Cossine similarity=A.B/(|A|*|B|)
+                   
+
+s1=hello world
+s2=hello a b world
+
+vector A: hello-1
+          world-1
+          a-0
+          b-0
+
+vector B: hello-1
+          world-1
+          a-1
+          b-1
+
+A.B=1*1+1*1+0*1+0*1=2
+
+|A|=sqrt(1*1+1*1)=1.41
+|B|=sqrt(1*1+1*1+1*1+1*1)=2
+
+cossine similarity=2/(1.41*2)=0.7071
+
+
+
+
+
+
+
